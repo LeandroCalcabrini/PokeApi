@@ -12,8 +12,8 @@ const Buttons = ({setUrl,siguiente,anterior}) => {
 
     return(
         <>
-        <button onClick={handleAnterior}>Anterior</button>
-        <button onClick={handleSiguiente}>Siguiente</button>
+        <button disabled={!anterior} onClick={handleAnterior}>Anterior</button>
+        <button disabled={!siguiente} onClick={handleSiguiente}>Siguiente</button>
         </>
     )
 }
